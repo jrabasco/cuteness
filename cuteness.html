@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                max-width: 500px;
+                max-height: 500px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Cuteness</h1>
+        Categories: {{ range .Categories }}<a href="{{.Ref}}">{{.Name}}</a> {{ end }}
+
+        {{ if .Name }}
+        {{ if .Image }}
+        <p>Here is a nice {{ .Name }}!</p>
+        <p>{{ .Text }}</p>
+        <img src="{{ .Image }}">
+        {{ else }}
+        <p>Click on the links above!</p>
+        {{ end }}
+        {{ end }}
+    </body>
+</html>

@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        Password: <input type="password" id="cuteness-pw"/><button onclick="go()">Go!</button>
+    </body>
+    <script>
+        function go() {
+            window.location.href = "/{{.}}/auth/" + document.getElementById("cuteness-pw").value
+        }
+    </script>
+</html>
