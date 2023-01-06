@@ -1,3 +1,3 @@
 # Cuteness
 
-Some cute random images and texts for my GF!
+Some cute random images and texts for my wife!
